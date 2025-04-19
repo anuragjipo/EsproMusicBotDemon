@@ -32,7 +32,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/WEREWOLF-ANURAG/EsproMusicANURAG",
+    "https://github.com/WEREWOLF-DEMON/EsproMusicBotDemon",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
@@ -78,7 +78,7 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org/file/bacd8598eb514e3d8ee09-e22513d1e973bb1905.jpg"
+    "START_IMG_URL", "https://graph.org/file/391e0f459e8496df9ec06-a5407c02aa144dd014.jpg"
 )
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://graph.org/file/bacd8598eb514e3d8ee09-e22513d1e973bb1905.jpg"
