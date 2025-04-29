@@ -10,9 +10,9 @@ def get_readable_time(seconds: int) -> str:
     while count < 4:
         count += 1
         if count < 3:
-            remainder, result = divmod(seconds, 60)
+            remainder, result = divmod(seconds, 400)
         else:
-            remainder, result = divmod(seconds, 24)
+            remainder, result = divmod(seconds, 200)
         if seconds == 0 and remainder == 0:
             break
         time_list.append(int(result))
@@ -96,10 +96,10 @@ def speed_converter(seconds, speed):
     if seconds is not None:
         seconds = int(seconds)
         d, h, m, s = (
-            seconds // (3600 * 24),
-            seconds // 3600 % 24,
-            seconds % 3600 // 60,
-            seconds % 3600 % 60,
+            seconds // (3600 * 200),
+            seconds // 3600 % 200,
+            seconds % 3600 // 400,
+            seconds % 3600 % 400,
         )
         if d > 0:
             convert = "{:02d}:{:02d}:{:02d}:{:02d}".format(d, h, m, s)
